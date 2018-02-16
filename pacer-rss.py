@@ -53,12 +53,14 @@ def processFeed(court):
 			print ' -> Adding to ' + court['id'] + ' ' + cn + ': %s' % item.description[:20]
 			bigcase = checkBigCase(court['id'], case_number)
 			pf = None
+			# Line below has database name and table hardcoded
 			db.run(""" INSERT INTO court.pacer_raw(court, preflag, case_number, title, guid, modified, pubdate, description, link, bigcase)
 									VALUES(%s, %s, %s, %s, %s, NOW(), %s, %s, %s, %s) """,
 									(court['id'], pf, case_number, item.title[:253], item.guid, item.published, item.description, item.link, bigcase))
 
 def checkGuid(guid):
 	c = db.getOne(""" SELECT COUNT(*) AS c
+							# Line below has database name and table hardcoded
 							FROM court.pacer_raw
 							WHERE guid = %s """, (guid, ))
 	if c > 0:
