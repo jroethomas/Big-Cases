@@ -6,7 +6,7 @@ class settings:
 	multitask_threads = 5
 	http_timeout = 30.0					# How long to wait for http requests
 	file_temp_path = ''					# Set a temporary path for working with PDFs (i.e., /data/pacer)
-	file_archive_path = ''				# Set a folder to archive downloaded PDFs (i.e., /data/pacer/archive)
+	file_archive_path = ''					# Set a folder to archive downloaded PDFs (i.e., /data/pacer/archive)
 	max_files_to_scrape = 10
 
 	# Database settings (MySQL server)
@@ -16,10 +16,10 @@ class settings:
 	db_port = 3306						# MySQL port
 
 	# PACER settings
-	pacer_user = ''					# PACER username
-	pacer_pass = ''					# PACER password
+	pacer_user = ''						# PACER username
+	pacer_pass = ''						# PACER password
 	pacer_client = ''					# PACER client code
-	pacer_max_price = 3.00				# Maximum amount to pay for PACER record
+	pacer_max_price = 3.00					# Maximum amount to pay for PACER record
 	
 	# DocumentCloud credentials
 	dc_user = ''						# DocumentCloud username
@@ -27,10 +27,10 @@ class settings:
 	dc_project_id = ''					# Numeric ID of DocumentCloud project to which to post
 	
 	# Twitter credentials
-	twitter_app_key = ''
-	twitter_app_secret = ''
-	twitter_oauth_key = ''
-	twitter_oauth_secret = ''
+	twitter_app_key = ''					# Twitter Consumer Key (API Key)
+	twitter_app_secret = ''					# Twitter Consumer Secret (API Secret)
+	twitter_oauth_key = ''					# Twitter Access Token
+	twitter_oauth_secret = ''				# Twitter Token Secret
 
         # RECAP credentials
         recap_token=''
