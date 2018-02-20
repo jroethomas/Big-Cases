@@ -22,7 +22,7 @@ class caseShare:
 		settings.twitter_oauth_secret
 	)
 	
-	db = dbconnect.db(host=settings.db_host, user=settings.db_user, pwd=settings.db_pass, port=settings.db_port)
+	db = dbconnect_db_add.db(host = settings.db_host, user=settings.db_user, pwd=settings.db_pass, port=settings.db_port, database=settings.db_database)
 	dc = DocumentCloud(settings.dc_user, settings.dc_pass)
 
 	# Re-arrange list of big cases into a dict with a unique ID 
@@ -38,7 +38,7 @@ class caseShare:
 	def listNew(self):
 		# List new filings in selected cases that haven't been tweeted yet
 		cases = self.db.getDict(""" SELECT * 
-						FROM court.pacer_raw
+						FROM pacer_raw
 						WHERE bigcase = 1
 						ORDER BY pid DESC
 						LIMIT 100 """)
@@ -49,7 +49,7 @@ class caseShare:
 
 	def update(self, case):
 		# Update a case after it's tweeted
-		self.db.run(""" UPDATE court.pacer_raw
+		self.db.run(""" UPDATE pacer_raw
 				SET bigcase = 2
 				WHERE pid = %s """,
 				(case['pid'], ))
