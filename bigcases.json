@@ -22,7 +22,9 @@
     { "name": "Sveen v. Melin", "case_number":"16-1432" },
     { "name": "Nat\"l Inst. of Family and Life v. Becerra", "case_number":"16-1140" },
     { "name": "Lucia v. SEC", "case_number":"17-130" },
-    { "name": "Benisek v. Lamone", "case_number":"17-333" }
+    { "name": "Benisek v. Lamone", "case_number":"17-333" },
+    { "name": "Doe v. Mattis", "case_number":"18-5032" },
+    { "name": "English v. Trump", "case_number":"18-5007" }
   ],
   "cases": [
     { "name":  "Mass. travel EO case", "case_number": "1:17-cv-10154", "court": "D. Mass." },
@@ -100,6 +102,11 @@
     { "name":"Waymo v. @Uber", "case_number":"3:17-cv-00939", "court":"N.D. Cal." },
     {"name":"@ACLU v. Mattis", "case_number":"1:17-cv-02069", "court":"D.D.C." },
     {"name":"United States v. Mike Flynn","case_number":"1:17-cr-00232-1", "court":"D.D.C." },
-    {"name":"Manafort v. DOJ, Mueller", "case_number":"1:18-cv-00011", "court":"D.D.C." }
+    {"name":"Manafort v. DOJ, Mueller", "case_number":"1:18-cv-00011", "court":"D.D.C." },
+    {"name":"United States v. Internet Research Agency et al.", "case_number":"1:18-cr-00032-1", "court":"D.D.C." },
+    {"name":"United States v. Richard Pinedo", "case_number":"1:18-cr-00024-1", "court":"D.D.C." },
+    {"name":"@JudicialWatch v. DOJ (Steele documents #FOIA)", "case_number":"1:17-cv-00916", "court":"D.D.C." },
+    {"name":"Protect Democracy v. U.S. Dep't of Defense", "case_number":"1:17-cv-00842", "court":"D.D.C." },
+    {"name":"United States v. Alex Van Der Zwaan", "case_number":"1:18-cr-00031-1", "court":"D.D.C." }
   ]
 }
