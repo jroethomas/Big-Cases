@@ -23,9 +23,9 @@ class settings:
     pacer_max_price = 3.00                                  # Maximum amount to pay for PACER record
 
     # DocumentCloud credentials
-    # dc_user = ''                                            # DocumentCloud username
-    # dc_pass = ''                                            # DocumentCloud password
-    # dc_project_id = ''                                      # Numeric ID of DocumentCloud project to which to post
+    dc_user = ''                                            # DocumentCloud username
+    dc_pass = ''                                            # DocumentCloud password
+    dc_project_id = ''                                      # Numeric ID of DocumentCloud project to which to post
 
     # Twitter credentials
     twitter_app_key = ''                               # Consumer Key (API Key)
