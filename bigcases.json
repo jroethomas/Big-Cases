@@ -108,5 +108,6 @@
     { "name": "@JudicialWatch v. DOJ (Steele documents #FOIA)", "case_number":"1:17-cv-00916", "court":"D.D.C." },
     { "name": "Protect Democracy v. U.S. Dep't of Defense", "case_number":"1:17-cv-00842", "court":"D.D.C." },
     { "name": "United States v. Alex Van Der Zwaan", "case_number":"1:18-cr-00031-1", "court":"D.D.C." }
+    { "name": "Joel Rich v. @FoxNews", "case_number":"1:18-cv-02223", "court":"S.D.N.Y." }
   ]
 }
