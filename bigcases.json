@@ -130,6 +130,7 @@
     { "name":"Snyder and Andrew McCabe v. @TheJusticeDept", "case_number":"1:18-cv-01389", "court":"D.D.C." },
     { "name":"@StormyDaniels v. @realDonaldTrump", "case_number":"2:18-cv-02217", "court":"C.D. Cal."},
     { "name":"@DNC v. The Russian Federation, @eminofficial, @GUCCIFER_2, @wikileaks, @DonaldJTrumpJr, @StoneColdRoger, et al","case_number":"1:18-cv-03501", "court":"S.D.N.Y." },
-    { "name":"M.M.M. v. Jefferson Beauregard Sessions, III", "case_number":"1:18-cv-01759", "court":"D.D.C." }
+    { "name":"M.M.M. v. Jefferson Beauregard Sessions, III", "case_number":"1:18-cv-01759", "court":"D.D.C." },
+    { "name": "United States v. James Wolfe", "case_number":"1:18-cr-00170-1", "court":"D.D.C." }
   ]
 }
