@@ -14,9 +14,7 @@ threads = settings.multitask_threads
 TIMEOUT = settings.http_timeout
 TITLEPATTERN = re.compile('^(.*?) (.*?)', re.IGNORECASE)
 
-db = dbconnect.db(host = settings.db_host, user=settings.db_user, pwd=settings.db_pass, port=settings.db_port)
-	
-
+db = dbconnect.db(host = settings.db_host, user=settings.db_user, pwd=settings.db_pass, port=settings.db_port, database=settings.db_database)
 
 def bigCaseList():
 	l = []
@@ -53,13 +51,14 @@ def processFeed(court):
 			print ' -> Adding to ' + court['id'] + ' ' + cn + ': %s' % item.description[:20]
 			bigcase = checkBigCase(court['id'], case_number)
 			pf = None
-			db.run(""" INSERT INTO court.pacer_raw(court, preflag, case_number, title, guid, modified, pubdate, description, link, bigcase)
+			db.run(""" INSERT INTO pacer_raw(court, preflag, case_number, title, guid, modified, pubdate, description, link, bigcase)
 									VALUES(%s, %s, %s, %s, %s, NOW(), %s, %s, %s, %s) """,
 									(court['id'], pf, case_number, item.title[:253], item.guid, item.published, item.description, item.link, bigcase))
 
 def checkGuid(guid):
 	c = db.getOne(""" SELECT COUNT(*) AS c
-							FROM court.pacer_raw
+							
+							FROM pacer_raw
 							WHERE guid = %s """, (guid, ))
 	if c > 0:
 		return True

@@ -29,17 +29,19 @@ class db:
 	_dbhost = ''
 	_dbuser = ''
 	_dbpass = ''
+	_database = ''
 	
-	def __init__(self, host = None, user =None, pwd = None, port = 3306 ):
+	def __init__(self, host = None, user = None, pwd = None, port = 3306, database = None):
 		_is_connected = False
 		self._dbhost = host
 		self._port = port
 		self._dbuser = user
 		self._dbpass = pwd
+		self._database = database
 		return
 		
-	def _connect(self, host = _dbhost, user = _dbuser, pwd = _dbpass ):
-		self._conn = MySQLdb.connect(self._dbhost, self._dbuser, self._dbpass, charset='UTF8', port = self._port)
+	def _connect(self, host = _dbhost, user = _dbuser, pwd = _dbpass, db = _dbdatabse):
+		self._conn = MySQLdb.connect(self._dbhost, self._dbuser, self._dbpass, self._dbdatabase, charset='UTF8', port = self._port)
 		self._db = self._conn.cursor(MySQLdb.cursors.DictCursor)
 		self._is_connected = True
 		return
