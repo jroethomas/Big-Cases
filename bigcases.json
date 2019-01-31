@@ -24,7 +24,8 @@
     { "name": "Lucia v. SEC", "case_number":"17-130" },
     { "name": "Benisek v. Lamone", "case_number":"17-333" },
     { "name": "Doe v. Mattis", "case_number":"18-5032" },
-    { "name": "English v. Trump", "case_number":"18-5007" }
+    { "name": "English v. Trump", "case_number":"18-5007" },
+    { "name": "Kisor v. Wilkie", "case_number":"18-15" }
   ],
   "cases": [
     { "name": "Mass. travel EO case", "case_number": "1:17-cv-10154", "court": "D. Mass." },
